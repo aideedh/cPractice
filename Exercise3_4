@@ -1,0 +1,26 @@
+// DIY Exercise3_4
+
+    // Find the maximum between two long integers.
+    // Let's also do the following:
+    // • Let's use only one scanf() function.
+    // • Let's use ternary (conditional) operator.
+    // • Let's reduce the number of variables used in the program.
+    // Your program should have the following output:
+    // Input two long integers: 8 3
+    // The maximum between 8 and 3 is 8
+
+
+#include <stdio.h>
+
+int main() {
+
+    int x;
+    int y;
+    
+    printf("Enter 2 numbers: ");
+    scanf("%d %d", &x, &y);
+
+    (x > y) ? printf("The max is x") : printf("The max is y");
+    
+    return 0;
+}
