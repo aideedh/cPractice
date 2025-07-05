@@ -1,3 +1,4 @@
+
 // DIY Exercise3_4
 
     // Find the maximum between two long integers.
@@ -9,7 +10,6 @@
     // Input two long integers: 8 3
     // The maximum between 8 and 3 is 8
 
-
 #include <stdio.h>
 
 int main() {
@@ -17,10 +17,10 @@ int main() {
     int x;
     int y;
     
-    printf("Enter 2 numbers: ");
+    printf("Input two long integers: ");
     scanf("%d %d", &x, &y);
 
-    (x > y) ? printf("The max is x") : printf("The max is y");
+    (x > y) ? printf("The maximum between %d and %d is %d", x, y, x) : printf("The maximum between %d and %d is %d", x, y, y);
     
     return 0;
 }
