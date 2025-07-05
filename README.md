@@ -1,3 +1,3 @@
 # cPractice
 
-This is all the practise exercises 
+These are all the practise exercises 
