@@ -1,0 +1,47 @@
+    // Find the maximum of two and three integers
+    
+    // by creating you own function maximum (a,b) that
+    // returns the maximum of two integers and using
+    // recursive calls if needed.
+    // Use exercise4_1_template.txt file.
+    // Your program should have the following output:
+    // Input two long integers: 8 3
+    // The maximum between 8 and 3 is 8
+    // Enter another long integer: 11
+    // The maximum between 8, 3 and 11 is 11
+
+#include <stdio.h>
+
+int max(int a, int b) {
+    return (a > b) ? a : b; 
+}
+
+int main() {
+    
+    long x, y, z;
+    
+    printf("Input two long integers:");
+    scanf("%ld %ld", &x, &y);
+    
+    long result = max(x,y);
+    printf("The maximum between %ld and %ld is %ld\n", x, y, result);
+    
+    printf("Enter another long integer:");
+    scanf("%ld", &z);
+    
+    long ans = max(result, z);
+    printf("The maximum between %ld, %ld and %ld is %ld\n", x, y, z, ans);
+    
+    return 0;
+}
+
+
+// SAMPLE OUTPUT  
+
+//Input two long integers:2 4
+//The maximum between 2 and 4 is 4
+//Enter another long integer:77
+//The maximum between 2, 4 and 77 is 77
+
+
+//=== Code Execution Successful ===
