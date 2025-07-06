@@ -45,3 +45,24 @@ int main() {
 
 
 //=== Code Execution Successful ===
+
+
+
+
+//#include <stdio.h>
+
+//long maximum(long a, long b) {
+//    return (a > b) ? a : b;
+//}
+
+//int main() {
+    
+//    long x,y,z;
+    
+//    printf("Input two long integers: ");
+//    scanf("%ld %ld", &x, &y);
+//    printf("The maximum between %ld and %ld is %ld", x,y,maximum(x,y));
+//    printf("Enter another long integer: ");
+//    scanf("%ld", &z);
+//    printf("The maximum between %ld, %ld and %ld is %ld", x,y,z, maximum(maximum(x,y),z));
+//}
