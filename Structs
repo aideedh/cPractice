@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+
+
+struct Person {
+    int age;
+    char name[12];
+    char gender[1];
+    int unsigned studentId;
+};
+
+
+
+int main() {
+    // struct Person person;
+    // person.age = 12;
+    // person.studentId = 1234;
+    // strcpy(person.name, "Tom");
+    // strcpy(person.gender, "M");
+    struct Person person = {12, "Tom", "M", 1234};
+    return 0;
+}
