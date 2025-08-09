@@ -1,23 +1,66 @@
 // Online C compiler to run C program online
+
 #include <stdio.h>
 #include <string.h>
 
-
 struct Person {
-    int age;
     char name[12];
-    char gender[1];
+    char gender[2];
+    int unsigned age;
     int unsigned studentId;
+    float balance;
 };
 
 
-
 int main() {
-    // struct Person person;
-    // person.age = 12;
-    // person.studentId = 1234;
-    // strcpy(person.name, "Tom");
-    // strcpy(person.gender, "M");
-    struct Person person = {12, "Tom", "M", 1234};
+    
+    //Method 1
+    struct Person person1 = {"Tom", "M", 18, 1234, 45.60};
+    
+    // Method 2 
+    struct Person person2;
+    strcpy(person2.name, "Bob");
+    strcpy(person2.gender, "M");
+    person2.age = 19;
+    person2.studentId = 12345;
+    
+    printf("The age of person 1 is %u \n", person1.age);
+    printf("The name of person 2 is %s and their gender is %s", person2.name, person2.gender);   
+    
     return 0;
 }
+
+
+// Online C compiler to run C program online
+
+#include <stdio.h>
+#include <string.h>
+
+struct Person {
+    char name[12];
+    char gender[2];
+    int unsigned age;
+    int unsigned studentId;
+    float balance;
+};
+
+
+int main() {
+    
+    //Method 1
+    struct Person person1 = {"Tom", "M", 18, 1234, 45.60};
+    
+    // Method 2 
+    struct Person person2;
+    strcpy(person2.name, "Bob");
+    strcpy(person2.gender, "M");
+    person2.age = 19;
+    person2.studentId = 12345;
+    
+    printf("The age of person 1 is %u \n", person1.age);
+    printf("The name of person 2 is %s and their gender is %s", person2.name, person2.gender);   
+    
+    return 0;
+}
+
+
