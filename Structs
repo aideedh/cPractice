@@ -65,4 +65,28 @@ int main() {
 
 
 
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+
+struct Person {
+    int age;
+    char name[12];
+    char gender[1];
+};
+
+int main(){
+    struct Person person1 = {12, "tommy", "M"};
+    struct Person person2;
+    
+    person2.age = 14;
+    strcpy(person2.name, "jane");
+    strcpy(person2.gender, "f");
+    
+    printf("person1 is %d, name %s, and gender %s \n", person1.age, person1.name, person1.gender);
+    
+    printf("person2 is %d, name %s, and gender %s", person2.age, person2.name, person2.gender);}
+
+
+
 
